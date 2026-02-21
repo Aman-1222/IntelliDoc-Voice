@@ -14,7 +14,7 @@ def get_retriever():
         embedding_function=embeddings
     )
 
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 8})
     return retriever
 
 
